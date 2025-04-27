@@ -15,7 +15,7 @@ export default NextAuth({
       return session;
     }
   }
-  secret: process.env.0k0yb0xstr7o2smn9nghm88tj7kvs2yn,
+  secret: process.env.NEXTAUTH_SECRET,
 
   nextAuthUrl: process.env.https://ac-speed-racer.vercel.app/download,
 })
