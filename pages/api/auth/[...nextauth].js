@@ -4,8 +4,8 @@ import DiscordProvider from "next-auth/providers/discord"
 export default NextAuth({
   providers: [
     DiscordProvider({
-      clientId: process.env.DISCORD_CLIENT_ID,
-      clientSecret: process.env.DISCORD_CLIENT_SECRET,
+      clientId: process.env.1360066879200297031,
+      clientSecret: process.env.lVWhmDEkoV6mp80cPSpM3ZLQ_3qdfaEA,
       authorization: { params: { scope: 'identify guilds guilds.members.read' } }
     })
   ],
@@ -15,4 +15,7 @@ export default NextAuth({
       return session;
     }
   }
+  secret: process.env.0k0yb0xstr7o2smn9nghm88tj7kvs2yn,
+
+  nextAuthUrl: process.env.https://ac-speed-racer.vercel.app/download,
 })
