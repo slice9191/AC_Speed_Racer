@@ -120,7 +120,7 @@ export default function DownloadPage() {
             fontSize: "16px"
           }}
         >
-          📦 Download Stormline Raceway"
+          📦 Download Stormline Raceway
         </a>
       </div>
     </div>
