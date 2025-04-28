@@ -69,7 +69,7 @@ export default function DownloadPage() {
       <div style={containerStyle}>
         <div style={boxStyle}>
           <h2>🔐 Subscribers Only</h2>
-          <p>Please log in with Discord to access your download.</p>
+          <p>Please log in with your Discord account to access your download.</p>
           <button
             onClick={() => signIn("discord")}
             style={{
@@ -95,7 +95,7 @@ export default function DownloadPage() {
       <div style={containerStyle}>
         <div style={boxStyle}>
           <h2>🚫 Access Denied</h2>
-          <p>You must be a subscriber to download this content.</p>
+          <p>You must be a tier 1 or above subscriber to download this content.</p>
         </div>
       </div>
     );
@@ -120,7 +120,7 @@ export default function DownloadPage() {
             fontSize: "16px"
           }}
         >
-          📦 Download Thunderhead v2.0
+          📦 Download Stormline Raceway"
         </a>
       </div>
     </div>
