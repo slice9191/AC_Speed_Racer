@@ -3,8 +3,8 @@
 export default async function handler(req, res) {
   const { userId } = req.query;
 
-  const GUILD_ID = "1360057745147035940";
-  const REQUIRED_ROLE = "1360059120551727346";
+  const GUILD_ID = "1024403741761343520";
+  const REQUIRED_ROLE = "1361346640455202242621";
   const BOT_TOKEN = process.env.DISCORD_BOT_TOKEN;
 
   try {
