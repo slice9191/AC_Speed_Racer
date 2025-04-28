@@ -4,8 +4,8 @@ export default async function handler(req, res) {
   const { userId } = req.query;
 
   const GUILD_ID = "1024403741761343520"; 
-  const REQUIRED_ROLE = "1346640447493246978";
-  const BOT_TOKEN = process.env.MTM2MDA2Njg3OTIwMDI5NzAzMQ.GU1znh.l_YxWDmNhhXhArskT2A_0Nhb45ueMLoZzhK6X4;
+  const REQUIRED_ROLE = "1346640447493246978"; 
+  const BOT_TOKEN = process.env.DISCORD_BOT_TOKEN;
 
   try {
     const response = await axios.get(
