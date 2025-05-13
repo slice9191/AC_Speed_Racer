@@ -25,7 +25,8 @@ export default async function handler(req, res) {
     return res.status(200).json({ url });
 
   } catch (error) {
-    console.error("Error generating signed URL:", error);
-    return res.status(500).json({ error: "Could not generate URL" });
-  }
+  console.error("Error generating signed URL:", JSON.stringify(error, null, 2));
+  return res.status(500).json({ error: "Could not generate URL" });
+}
+
 }
