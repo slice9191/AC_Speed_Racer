@@ -18,7 +18,7 @@ export default async function handler(req, res) {
   try {
     const command = new GetObjectCommand({
       Bucket: "premium-access-files", // <- Replace with your actual bucket name
-      Key: file, // Example: "StormLine Raceway 0.9.7z"
+      Key: "Stormline Raceway 0.85.7z"
     });
 
     const url = await getSignedUrl(client, command, { expiresIn: 60 });
