@@ -1,12 +1,11 @@
-import { S3Client, GetObjectCommand } from "@aws-sdk/client-s3";
-import { getSignedUrl } from "@aws-sdk/s3-request-presigner";
+import { S3Client } from "@aws-sdk/client-s3";
 
 const client = new S3Client({
   region: "auto",
   endpoint: "https://868e0c5879a74d939d52af6ebd8a8dcc.r2.cloudflarestorage.com",
   credentials: {
-    accessKeyId: process.env.CLOUDFLARE_ACCESS_KEY_ID,
-    secretAccessKey: process.env.CLOUDFLARE_SECRET_ACCESS_KEY,
+    accessKeyId: process.env.d614f1b640fc909860c50cf3473be847,
+    secretAccessKey: process.env.09d49223fdf143d752093e27c84b6a6c68728eaad4a3f3a881b4dca3a968e9e2,
   },
 });
 
@@ -17,7 +16,7 @@ export default async function handler(req, res) {
 
   try {
     const command = new GetObjectCommand({
-      Bucket: "premium-access-files", // <- Replace with your actual bucket name
+      Bucket: "premium-access-files/", // <- Replace with your actual bucket name
       Key: "Stormline Raceway 0.85.7z"
     });
 
