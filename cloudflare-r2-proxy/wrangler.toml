@@ -1,0 +1,10 @@
+name = "cloudflare-r2-proxy"
+main = "src/index.js"
+compatibility_date = "2025-05-14"
+account_id = "0adfba57bc4e65e62ccaaed2423e0c06"
+workers_dev = true
+type = "javascript"
+
+[[r2_buckets]]
+binding = "MY_BUCKET"
+bucket_name = "premium-access-files"
