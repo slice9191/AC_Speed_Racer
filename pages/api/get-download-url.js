@@ -17,7 +17,7 @@ export default async function handler(req, res) {
 
   try {
     const command = new GetObjectCommand({
-      Bucket: "premium-access-files/", // <- Replace with your actual bucket name
+      Bucket: "premium-access-files", // <- Replace with your actual bucket name
       Key: "Stormline Raceway 0.85.7z"
     });
 
