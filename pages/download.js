@@ -16,7 +16,7 @@ export default function DownloadPage() {
 
           if (access) {
             setHasAccess(true);
-            const res = await fetch("/api/get-download-url?file=Stormline Raceway 0.85.7z");
+            const res = await fetch("/api/get-download-url?file=Stormline Raceway 0.86.7z");
             const data = await res.json();
             setDownloadUrl(data.url);
           }
